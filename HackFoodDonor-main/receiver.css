@@ -14,12 +14,10 @@
     align-items: center;
     min-height: 100vh;
     padding: 20px;
-    background-image: url('DALL·E 2024-11-10 11.41.52 - Create a digital illustration of a food donation center with a white main background while incorporating beautiful, vibrant accent colors. The scene s.webp');
-    background-size: 100% 110%;
+    background-image: url('551f3958-94c4-40b8-ad2f-0af896934b72.webp');
+    background-size: 100% 100%; /* Set width to 60% and height to 100% */
     background-repeat: no-repeat;
     background-position: center center;
-    height: 70vh; /* Ensures the body takes the full viewport height */
-    margin: 0;
   }
   
   /* Main Container for Each Page */
@@ -171,4 +169,6 @@
   #close-popup:hover {
     background-color: #c0392b;
   }
+  
+
   
