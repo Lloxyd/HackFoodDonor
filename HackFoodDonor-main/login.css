@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-image: url('4b992567-0e9f-4c9a-bcaf-abec7cd2fe14.webp');
+    background-size: 100% 110%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 70vh; /* Ensures the body takes the full viewport height */
+    margin: 0;
+  }
+  
+  /* Main Container for Each Page */
+  .container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  h1, h2 {
+    color: #28a745;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    color: #555;
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  label {
+    font-weight: bold;
+    color: #555;
+    text-align: left;
+    width: 100%;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"],
+  input[type="date"] {
+    padding: 10px;
+    font-size: 1em;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  input:focus {
+    border-color: #28a745;
+    outline: none;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.2);
+  }
+  
+  /* Button Styling */
+  button, .button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  button:hover, .button:hover {
+    background-color: #218838;
+  }
+  
+  /* List Styling for Food Items and Cart */
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    width: 100%;
+  }
+  
+  ul li {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Expired Food Item Styling */
+  ul li.expired {
+    color: #e74c3c;
+    font-weight: bold;
+  }
+  
+  /* Message Styling */
+  #register-message,
+  #login-message,
+  #eligibility-message {
+    color: #28a745;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* Popup Message Styling (for eligibility or other alerts) */
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+    z-index: 1000;
+  }
+  
+  .popup-content h3 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .popup-content p {
+    margin-bottom: 20px;
+  }
+  
+  #close-popup {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #close-popup:hover {
+    background-color: #c0392b;
+  }
+  

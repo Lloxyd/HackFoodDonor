@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eligibility Check</title>
+  <link rel="stylesheet" href="eligibility.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Check Eligibility</h2>
+    <form id="eligibility-form">
+      <label for="household-size">Household Size</label>
+      <input type="number" id="household-size" required>
+      <label for="household-income">Household Income</label>
+      <input type="number" id="household-income" required>
+      <button type="submit">Check Eligibility</button>
+    </form>
+    <div id="eligibility-message"></div>
+    <a href="index.html" class="button">Back to Home</a>
+    <!-- This button will be shown only when eligibility is passed -->
+    <button id="view-food-items" class="button" style="display: none;" onclick="window.location.href='foodList.html'">
+      View Food Items
+    </button>
+  </div>
+  <script src="js/eligibility.js"></script>
+</body>
+</html>
+
